@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+ int i,n,option;
+ char str[100];
+ 
+ printf("enter something");
+scanf("%s",&str);
+printf("enter a key password");
+scanf("%d",&n);
+printf("enter 1 for encryption or\n2 for decryption");
+scanf("%d",&option);
+
+switch (option)
+{
+case 1:
+for(i=0;(i<100&&str[i]!='\0');i++)
+str[i]=str[i]+n;
+printf("\nencrypted data is=%s",str);
+break;
+case 2:
+for(i=0;(i<100&&str[i]!='\0');i++)
+str[i]=str[i]-n;
+printf("\ndecrypted data is=%s",str);
+break;
+default:
+printf("error:invalid option");
+
+}
+
+
+}
+
+
