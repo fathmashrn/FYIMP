@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{ 
+    int i,n,sum;
+    printf("enter a number\n");
+    scanf("%d",&n);
+    for(i=0;i<=n;i++);
+    {
+    sum=n*(n+1)/2;
+    printf("sum of first %d natural numbers=%d\n",n,sum);
+    }
+ }
