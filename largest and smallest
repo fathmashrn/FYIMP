@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+ int nmb1,nmb2,nmb3;
+ printf("Enter any three number\n");
+ scanf("%d%d%d",&nmb1,&nmb2,&nmb3);
+ 
+ int smallest,largest;
+ //to find largest number
+ if(nmb1>nmb2&&nmb1>nmb3){
+   largest=nmb1;
+ }else if(nmb2>nmb3){
+   largest=nmb2;
+ }else{
+   largest=nmb3;
+ }   
+ //to find smallest number 
+ if(nmb1<nmb2&&nmb1<nmb3){
+   smallest=nmb1;
+ }else if(nmb2<nmb3){
+   smallest=nmb2;
+ } else{
+    smallest=nmb3;
+ }   
+ 
+ printf("The largest number=%d\n",largest);
+ printf("The smallest number=%d",smallest);
+
+}
