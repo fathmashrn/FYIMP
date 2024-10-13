@@ -1,0 +1,32 @@
+//sum of natural,odd and even numbers
+#include <stdio.h>
+int main()
+{
+int n,opt;
+int natural,odd,even;
+printf("Enter a number\n");
+scanf("%d",&n);
+printf("Enter\n1 for the sum of natural number\n2 for the sum of odd number\n3 for the sum of even number\n");
+scanf("%d",&opt);
+
+switch(opt){
+ case 1:
+ if(1)
+ natural=n*(n+1)/2;
+ printf("Sum of %d natural numbers:%d",n,natural);
+ break;
+ case 2:
+ if(2)
+ odd=n*n;
+ printf("Sum of %d odd numbers:%d",n,odd);
+ break;
+ case 3:
+ if(3)
+ even=n*(n+1);
+ printf("Sum of %d even numbers:%d",n,even);
+ break;
+ default:
+ printf("Invalid option");
+ break;
+ }
+}
