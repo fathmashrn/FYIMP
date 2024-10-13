@@ -1,0 +1,33 @@
+//to solve quadratic equation
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+int option;
+float a,b,c,eqn1,eqn2,determinant;
+
+printf("Enter any three coefficient for quadratic equation\n");
+scanf("%f%f%f",&a,&b,&c);
+printf("Enter\n1 for first solution or\n2 for second solution\n");
+scanf("%d",&option);
+determinant=b*b-4*a*c;
+if(determinant<0){
+printf("No real solution");
+return 0;
+}
+eqn1=(-b+sqrt(determinant))/(2*a);
+eqn2=(-b-sqrt(determinant))/(2*a);
+
+switch(option){
+case 1:
+printf("first solution=%f",eqn1);
+break;
+case 2:
+printf("second solution=%f",eqn2);
+break;
+default:
+printf("Invalid option");
+break;
+}
+return 0;
+}
