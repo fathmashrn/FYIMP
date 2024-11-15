@@ -1,0 +1,48 @@
+//sum of three 2D array(4x4)
+
+#include <stdio.h>
+int main()
+{
+    int a1[4][4],a2[4][4],a3[4][4],a4[4][4];
+    int i,j;
+    
+    printf("The 1st matrix are\n");
+    for(i=0;i<4;i++){
+        for(j=0;j<4;j++){
+            a1[i][j]=i+j;
+            printf("%d\t",a1[i][j]);
+        }
+            printf("\n");
+        }
+
+    printf("------------------\n");
+    printf("The 2nd matrix are\n");
+    for(i=0;i<4;i++){
+        for(j=0;j<4;j++){
+            a2[i][j]=2*i+j;
+            printf("%d\t",a2[i][j]);
+        }
+            printf("\n");
+        }
+    
+    printf("------------------\n");
+    printf("The 3rd matrix are\n");
+    for(i=0;i<4;i++){
+        for(j=0;j<4;j++){
+            a3[i][j]=(4*i)+j;
+            printf("%d\t",a3[i][j]);
+        }
+            printf("\n");
+        }
+    
+    printf("------------------\n");
+    printf("The sum of matrices are\n");
+    for(i=0;i<4;i++){
+        for(j=0;j<4;j++){
+            a4[i][j]=(7*i)+(3*j);
+            printf("%d\t",a4[i][j]);
+        }
+            printf("\n");
+        }
+    
+}
